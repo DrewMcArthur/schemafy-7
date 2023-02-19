@@ -24,7 +24,8 @@ fn main() -> Result<(), Box<dyn Error>> {
     let mut test_modules = vec![];
     let mut blacklist_count = 0;
 
-    for path in fs::read_dir("tests/JSON-Schema-Test-Suite/tests/draft4")?
+    // TODO: use input var to select which draft version
+    for path in fs::read_dir("tests/JSON-Schema-Test-Suite/tests/draft7")?
         .map(|entry| entry.unwrap().path())
         .filter(|path| path.extension() == Some(OsStr::new("json")))
     {

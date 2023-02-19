@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/Marwes/schemafy.svg?branch=master)](https://travis-ci.org/Marwes/schemafy)
 [![Docs](https://docs.rs/schemafy/badge.svg)](https://docs.rs/schemafy)
 
-This is a Rust crate which can take a [JSON schema (draft 4)](http://json-schema.org/) and generate Rust types which are serializable with [serde](https://serde.rs/). No checking such as `min_value` are done but instead only the structure of the schema is followed as closely as possible.
+This is a Rust crate which can take a [JSON schema (draft 7)](http://json-schema.org/) and generate Rust types which are serializable with [serde](https://serde.rs/). No checking such as `min_value` are done but instead only the structure of the schema is followed as closely as possible.
 
 As a schema could be arbitrarily complex this crate makes no guarantee that it can generate good types or even any types at all for a given schema but the crate does manage to bootstrap itself which is kind of cool.
 
